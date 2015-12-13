@@ -2,7 +2,7 @@
 
 ## Basics
 
-The canvas element can be used to draw graphics, make photo compositions or perform animations via scripting, usually JavaScript. You should provide alternative content inside the canvas block. That alternative content will be rendered on older browsers that don't support canvas and in browser with JavaScript disabled. It is easy to define some fallback content, to be displayed  in older browsers which not supporting it, like versions of Internet Explorer earlier than version 9 or textual browsers. Just insert the alternate content inside the canvas element, and the browsers that don't support canvas will ignore the container and render the fallback content inside it.
+The ```<canvas>``` element can be used to draw graphics, make photo compositions or perform animations via scripting, usually JavaScript, basicly it creates a fixed-size drawing surface. You should provide alternative content inside the canvas block. That alternative content will be rendered on older browsers that don't support canvas and in browser with JavaScript disabled. It is easy to define some fallback content, to be displayed in older browsers which not supporting it, like versions of Internet Explorer earlier than version 9 or textual browsers. Just insert the alternate content inside the ```<canvas>``` element, and the browsers that don't support canvas will ignore the container and render the fallback content inside it.
 
 ## Attributes
 
@@ -19,7 +19,8 @@ The canvas element can be used to draw graphics, make photo compositions or perf
 
 ## Examples
 
-- Fallback content
+- Fallback content.
+
 ```html
 <!-- use an image for fallback content -->
 <canvas id="clock" width="150" height="150">
@@ -27,7 +28,8 @@ The canvas element can be used to draw graphics, make photo compositions or perf
 </canvas>
 ```
 
-- Default sizing
+- Default sizing.
+
 ```html
 <!-- defualt sizing 300x150 -->
 <canvas id="canvas">
@@ -35,7 +37,8 @@ The canvas element can be used to draw graphics, make photo compositions or perf
 </canvas>
 ```
 
-- Using attributes for sizing
+- Using attributes for sizing.
+
 ```html
 <!-- using attributes for sizing -->
 <canvas id="canvas" width="300" height="400">
@@ -44,6 +47,7 @@ The canvas element can be used to draw graphics, make photo compositions or perf
 ```
 
 - If your canvas does not use transparency set moz-opaque attribute on the canvas tag. This information can be used internally to optimize rendering.
+
 ```html
 <!-- transparency -->
 <canvas id="canvas" moz-opaque>
