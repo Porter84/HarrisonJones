@@ -26,7 +26,7 @@ Or creating a new one.
 ```javascript
 // create
 var canvas = document.createElement('canvas');
-document.body.appandChild(canvas);
+document.body.appendChild(canvas);
 ```
 
 When you use this canvas reference, you can setup width and height via code, if you already done in the HTML, or if you want to change size for some reason. It will resize the bitmap itself, create a new bitmap with a new resolution, and cealring out any other drawing was on the canvas previously.
