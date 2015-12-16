@@ -29,7 +29,7 @@ var canvas = document.createElement('canvas');
 document.body.appendChild(canvas);
 ```
 
-When you use this canvas reference, you can setup width and height via code, if you already done in the HTML, or if you want to change size for some reason. It will resize the bitmap itself, create a new bitmap with a new resolution, and cealring out any other drawing was on the canvas previously.
+When you use this canvas reference, you can setup width and height via code, if you already done in the HTML, or if you want to change size for some reason. It will resize the bitmap itself, create a new bitmap with a new resolution, and clearing out any other drawing was on the canvas previously.
 
 ```javascript
 // change size via code
@@ -38,15 +38,15 @@ canvas.width = 400;
 canvas.height = 400;
 ```
 
-Never use for same reason jQuery, because this will chnage the style through CSS, and it can cause distortion issues on your canvas. It won't change the resolution of the canvas.
+Never use for same reason jQuery, because this will change the style through CSS, and it can cause distortion issues on your canvas. It won't change the resolution of the canvas.
 
 ```javascript
 // change size via code
 var canvas = document.getElementById('canvas');
-$('#canvas').width(400)                           // Dont't do that!!!
+$('#canvas').width(400);                           // Dont't do that!!!
 ```
 
-Finally you get a 2d rendering context, what you can use to drawing something. The context is where the magic happens.
+Finally you get a 2d rendering context, what you can use to draw something. The context is where the magic happens.
 
 ```javascript
 var canvas = document.getElementById('canvas');   // Retrieves the node from the DOM
@@ -66,6 +66,6 @@ if (canvas.getContext) {                          // Checking for support
 
 ## The Grid
 
-The **canvas grid** is basically a **coordinate space**. Normally one unit in the grid corresponds to one pixel on the canvas. The origin of this grid is positioned in the top left corner at coordinate (0, 0). All elements are placed relative to this origin.
+The **canvas grid** is basically a **coordinate space**. Normally one unit in the grid corresponds to one pixel on the canvas. The origin of this grid is positioned at the top of the left corner at coordinate (0, 0). All elements are placed relative to this origin.
 
 ![Canvas drid](../images/canvas_grid.png)

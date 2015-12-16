@@ -13,9 +13,9 @@ The ```<canvas>``` element can be used to draw graphics, make photo compositions
 
 ## Other
 
-- **HTML 5:** It is an HTML 5 tag thats need to use HTML 5 doctype: <!DOCTYPE html>
-- **required closing tag:** the <canvas> element requires the closing tag </canvas>, as consequence of the way fallback is provided. If this closing tag is not presented, the rest of the document would be considered the fallback content and wouldn't be displayed. If fallback content is not needied, a simple ```html<canvas id="foo" ...></canvas>``` is fully compatible with all browsers that support canvas at all.
-- **sizing:** a canvas is basicly a bitmap image with rows and columns with pixels, when you setup the width and heigh in the canvas tag, you specify the actual resolution of that bitmap. The canvas can be changed using a stylsheet, but if you use CSS bitmap of canvas will scaled during rendering to fit the styled size. If your renderings seem distorted, try specifying your width and hieght attributes explicitly in the <canvas> attributes, and not using CSS.
+- **HTML 5:** It is an HTML 5 tag thats need to use HTML 5 doctype: ```<!DOCTYPE html>```
+- **required closing tag:** the <canvas> element requires the closing tag </canvas>, as consequence of the way fallback is provided. If this closing tag is not presented, the rest of the document would be considered the fallback content and wouldn't be displayed. If fallback content is not needed, a simple ```<canvas id="foo" ...></canvas>``` is fully compatible with all browsers that support canvas at all.
+- **sizing:** a canvas is basicly a bitmap image with rows and columns with pixels, when you setup the width and heigh in the canvas tag, you specify the actual resolution of that bitmap. The canvas can be changed using a stylesheet, but if you use CSS bitmap of canvas will scaled during rendering to fit the styled size. If your renderings seem distorted, try specifying your width and height attributes explicitly in the <canvas> attributes, and not using CSS.
 
 ## Examples
 
@@ -31,7 +31,7 @@ The ```<canvas>``` element can be used to draw graphics, make photo compositions
 - Default sizing.
 
 ```html
-<!-- defualt sizing 300x150 -->
+<!-- default sizing 300x150 -->
 <canvas id="canvas">
   Sorry, your browser doesn't support the canvas element.
 </canvas>
