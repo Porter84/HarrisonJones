@@ -47,6 +47,7 @@ It cannot store states, because HTTP is a stateless protocol.
 **1xx: Informational - Request received, continuing process**
 
 **2xx: Success - The action was successfully received, understood, and accepted**
+
 **200 OK**
 The request has succeeded. The information returned with the response is dependent on the method used in the request, for example:
 GET an entity corresponding to the requested resource is sent in the response;
