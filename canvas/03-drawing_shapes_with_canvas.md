@@ -25,10 +25,10 @@ clearRect(x, y, width, height)
 
 Another primitive is the path. A path is a list of points, connected by segments of lines that can be of different shapes, curved or not, of different width and of different color. A path or a subpath can be closed.
 To making path takes these steps:
-1. **Create path:** ```beginPath()``` creates a new path. Internally, paths are stored as a list of subpaths, which together form a shape. Every time this method is called, the list is reset and start drawing new shapes. When the current path is empty, or on a newly created canvas, the first path construction command is always treated as a ```moveTo()```. For that reason, you will almost always want to specifically set your starting position. You could also use ```moveTo()``` to draw unconnected paths.
-2. **Use path commands:** The second step is calling the methods that actually specify the path to be drawn. ```moveTo()```, ```lineTo()```, ```bezierCurveTo()```, etc.
-3. **Close the path:** The third and optional step, is to call ```closePath()``` method. It will try to close the shape with a line from the current point to the start point if it is possible, otherwise this function does nothing.
-4. **Once the path has been created, render it with stroke or fill:** ```stroke()```, ```fill()```. When you call ```fill()```, any open shapes are closed automatically, so you don't have to call ```closePath()```.
+ 1. **Create path:** ```beginPath()``` creates a new path. Internally, paths are stored as a list of subpaths, which together form a shape. Every time this method is called, the list is reset and start drawing new shapes. When the current path is empty, or on a newly created canvas, the first path construction command is always treated as a ```moveTo()```. For that reason, you will almost always want to specifically set your starting position. You could also use ```moveTo()``` to draw unconnected paths.
+ 2. **Use path commands:** The second step is calling the methods that actually specify the path to be drawn. ```moveTo()```, ```lineTo()```, ```bezierCurveTo()```, etc.
+ 3. **Close the path:** The third and optional step, is to call ```closePath()``` method. It will try to close the shape with a line from the current point to the start point if it is possible, otherwise this function does nothing.
+ 4. **Once the path has been created, render it with stroke or fill:** ```stroke()```, ```fill()```. When you call ```fill()```, any open shapes are closed automatically, so you don't have to call ```closePath()```.
 
 ## Drawing functions
 
