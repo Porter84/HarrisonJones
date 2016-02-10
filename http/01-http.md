@@ -44,34 +44,24 @@ It cannot store states, because HTTP is a stateless protocol.
  - **PATCH:** The PATCH method applies partial modifications to a resource. All general-purpose HTTP servers are required to implement at least the GET and HEAD methods,[20] and, whenever possible, also the OPTIONS method.[citation needed]
 
 ##Enumerate at least 4 HTTP status code from 4 different code groups.
- - 1xx: Informational - Request received, continuing process
- - 2xx: Success - The action was successfully received, understood, and accepted
-   202 Accepted
-
-The request has been accepted for processing, but the processing has not been completed. The request might or might not eventually be acted upon, as it might be disallowed when processing actually takes place. There is no facility for re-sending a status code from an asynchronous operation such as this.
-
-The 202 response is intentionally non-committal. Its purpose is to allow a server to accept a request for some other process (perhaps a batch-oriented process that is only run once per day) without requiring that the user agent's connection to the server persist until the process is completed. The entity returned with this response SHOULD include an indication of the request's current status and either a pointer to a status monitor or some estimate of when the user can expect the request to be fulfilled.
-
-      - 3xx: Redirection - Further action must be taken in order to
-        complete the request
-        307 Temporary Redirect
-
+###1xx: Informational - Request received, continuing process
+###2xx: Success - The action was successfully received, understood, and accepted
+**200 OK**
+The request has succeeded. The information returned with the response is dependent on the method used in the request, for example:
+GET an entity corresponding to the requested resource is sent in the response;
+HEAD the entity-header fields corresponding to the requested resource are sent in the response without any message-body;
+POST an entity describing or containing the result of the action;
+TRACE an entity containing the request message as received by the end server.
+###3xx: Redirection - Further action must be taken in order to complete the request
+**307 Temporary Redirect**
 The requested resource resides temporarily under a different URI. Since the redirection MAY be altered on occasion, the client SHOULD continue to use the Request-URI for future requests. This response is only cacheable if indicated by a Cache-Control or Expires header field.
-
 The temporary URI SHOULD be given by the Location field in the response. Unless the request method was HEAD, the entity of the response SHOULD contain a short hypertext note with a hyperlink to the new URI(s) , since many pre-HTTP/1.1 user agents do not understand the 307 status. Therefore, the note SHOULD contain the information necessary for a user to repeat the original request on the new URI.
-
 If the 307 status code is received in response to a request other than GET or HEAD, the user agent MUST NOT automatically redirect the request unless it can be confirmed by the user, since this might change the conditions under which the request was issued.
-
-
-      - 4xx: Client Error - The request contains bad syntax or cannot
-        be fulfilled
-        404 Not Found
-
+###4xx: Client Error - The request contains bad syntax or cannot be fulfilled
+**404 Not Found**
 The server has not found anything matching the Request-URI. No indication is given of whether the condition is temporary or permanent. The 410 (Gone) status code SHOULD be used if the server knows, through some internally configurable mechanism, that an old resource is permanently unavailable and has no forwarding address. This status code is commonly used when the server does not wish to reveal exactly why the request has been refused, or when no other response is applicable.
-      - 5xx: Server Error - The server failed to fulfill an apparently
-        valid request
-        500 Internal Server Error
-
+###5xx: Server Error - The server failed to fulfill an apparently valid request
+**500 Internal Server Error**
 The server encountered an unexpected condition which prevented it from fulfilling the request.
 
 
