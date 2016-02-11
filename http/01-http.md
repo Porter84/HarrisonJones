@@ -77,3 +77,4 @@ The server encountered an unexpected condition which prevented it from fulfillin
 HTTP is a protocol, REST is a technology what using HTTP.
 
 ##What is a Cookie? What are its pros and cons?
+An HTTP cookie (also called web cookie, Internet cookie, browser cookie or simply cookie), is a small piece of data sent from a website and stored in the user's web browser while the user is browsing it.
