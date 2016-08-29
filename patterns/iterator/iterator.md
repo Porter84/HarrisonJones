@@ -13,7 +13,7 @@
 
 ## Structure
 
-![iterator uml](https://github.com/Porter84/HarrisonJones/blob/master/patterns/Iterator_UML_class_diagram.svg "Iterator UML")
+![iterator uml](https://github.com/Porter84/HarrisonJones/blob/master/patterns/iterator/Iterator_UML_class_diagram.svg "Iterator UML")
 
 _Iterator_
 - implements iterator interface with methods first(), next(), etc

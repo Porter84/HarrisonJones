@@ -12,7 +12,7 @@
 
 ## Structure
 
-![composite uml](https://github.com/Porter84/HarrisonJones/blob/master/patterns/Composite_UML_class_diagram.png "Composite UML")
+![composite uml](https://github.com/Porter84/HarrisonJones/blob/master/patterns/composite/Composite_UML_class_diagram.png "Composite UML")
 
 _Component_
 - is the abstraction for all components, including composite ones
