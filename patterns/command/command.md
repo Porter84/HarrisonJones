@@ -19,7 +19,7 @@ Four terms always associated with the command pattern are _command_, _receiver_,
 - An _invoker_ asks the command to carry out the request.
 - The _client_ creates a ConcreteCommand object and sets its receiver
 
-![command uml](https://github.com/Porter84/HarrisonJones/blob/master/patterns/composite/Command_UML_class_diagram.png "Command UML")
+![command uml](https://github.com/Porter84/HarrisonJones/blob/master/patterns/composite/Command_UML_class_diagram.gif "Command UML")
 
 ## Typical usage in JavaScript
 
